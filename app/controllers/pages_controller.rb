@@ -48,5 +48,42 @@ class PagesController < ApplicationController
   def other_cause
   end
   
+  def commercial
+  end
   
+  def residential
+  end
+  
+  def retail
+  end
+  
+  def medical
+  end
+  
+  def industrial
+  end
+  
+  def service
+  end
+  
+  def investment_prop
+  end
+  
+  def worship
+  end
+  
+  def faq
+  end
+  
+  def articles
+  end
+  
+  def prepare
+  end
+  
+  def links
+  end
+  
+  def stories
+  end
 end

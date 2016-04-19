@@ -24,6 +24,21 @@ Rails.application.routes.draw do
   get 'pages/multi_cause', to: 'pages#multi_cause'
   get 'pages/other_cause', to: 'pages#other_cause'
   
+  get 'pages/commercial', to: 'pages#commercial'
+  get 'pages/residential', to: 'pages#residential'
+  get 'pages/retail', to: 'pages#retail'
+  get 'pages/medical', to: 'pages#medical'
+  get 'pages/industrial', to: 'pages#industrial'
+  get 'pages/service', to: 'pages#service'
+  get 'pages/investment_prop', to: 'pages#investment_prop'
+  get 'pages/worship', to: 'pages#worship'
+
+  get 'pages/faq', to: 'pages#faq'
+  get 'pages/articles', to: 'pages#articles'
+  get 'pages/prepare', to: 'pages#prepare'
+  get 'pages/links', to: 'pages#links'
+  get 'pages/stories', to: 'pages#stories'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
