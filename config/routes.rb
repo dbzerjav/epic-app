@@ -1,11 +1,28 @@
 Rails.application.routes.draw do
   devise_for :users
   
-  root 'welcome#index'
+  root 'pages#home'
   
   match '/contacts', to: 'contacts#new', via: 'get'
   resources "contacts", only: [:new, :create]
-
+  
+  get 'pages/power_of_epic', to: 'pages#power_of_epic'
+  get 'pages/prof_affiliation', to: 'pages#prof_affiliation'
+  get 'pages/our_people', to: 'pages#our_people'
+  get 'pages/our_commitment', to: 'pages#our_commitment'
+  get 'pages/ethical_standard', to: 'pages#ethical_standard'
+  get 'pages/executives', to: 'pages#executives'
+  get 'pages/lic_and_cert', to: 'pages#lic_and_cert'
+  
+  get 'pages/epic_advantage', to: 'pages#epic_advantage'
+  get 'pages/epic_approach', to: 'pages#epic_approach'
+  
+  get 'pages/flood', to: 'pages#flood'
+  get 'pages/water_and_mold', to: 'pages#water_and_mold'
+  get 'pages/wind_and_hurricane', to: 'pages#wind_and_hurricane'
+  get 'pages/collapse_and_sinkhole', to: 'pages#collapse_and_sinkhole'
+  get 'pages/multi_cause', to: 'pages#multi_cause'
+  get 'pages/other_cause', to: 'pages#other_cause'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
