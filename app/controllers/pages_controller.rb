@@ -45,6 +45,9 @@ class PagesController < ApplicationController
   def water_and_mold
   end
   
+  def fire
+  end
+  
   def wind_and_hurricane
   end
   

@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   get 'pages/suffered_damage', to: 'pages#suffered_damage' 
   get 'pages/flood', to: 'pages#flood'
   get 'pages/water_and_mold', to: 'pages#water_and_mold'
+  get 'pages/fire', to: 'pages#fire'
   get 'pages/wind_and_hurricane', to: 'pages#wind_and_hurricane'
   get 'pages/collapse_and_sinkhole', to: 'pages#collapse_and_sinkhole'
   get 'pages/multi_cause', to: 'pages#multi_cause'
