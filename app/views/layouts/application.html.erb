@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "EpicApp" %></title>
+    <link rel="icon" href="http://epicgrouppa.com/wp-content/uploads/2011/04/favicon.png" type="image/png">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag "application", :media => "all" %>
@@ -51,8 +52,9 @@
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= link_to "OUR COMPANY", pages_our_company_path %><span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">OUR COMPANY<span class="caret"></span></a>
               <ul class="dropdown-menu">
+                <li><%= link_to "OUR COMPANY", pages_our_company_path %></li>
                 <li><%= link_to "THE POWER OF EPIC", pages_power_of_epic_path %></li>
                 <li><%= link_to "PROFESSIONAL AFFILIATION", pages_prof_affiliation_path %></li>
                 <li><%= link_to "OUR PEOPLE", pages_our_people_path %></li>
@@ -65,8 +67,9 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= link_to "HOW IT WORKS", pages_how_it_works_path %><span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HOW IT WORKS<span class="caret"></span></a>
               <ul class="dropdown-menu">
+                <li><%= link_to "HOW IT WORKS", pages_how_it_works_path %></li>
                 <li><%= link_to "THE EPIC ADVANTAGE", pages_epic_advantage_path %></li>
                 <li><%= link_to "THE EPIC APPROACH", pages_epic_approach_path %></li>
                 <li role="separator" class="divider"></li>
@@ -74,8 +77,9 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= link_to "HAVE YOU SUFFERED DAMAGE?", pages_suffered_damage_path %><span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HAVE YOU SUFFERED DAMAGE?<span class="caret"></span></a>
               <ul class="dropdown-menu">
+                <li><%= link_to "HAVE YOU SUFFERED DAMAGE?", pages_suffered_damage_path %></li>
                 <li><%= link_to "FLOOD DAMAGE", pages_flood_path %></li>
                 <li><%= link_to "WATER DAMAGE & MOLD", pages_water_and_mold_path %></li>
                 <li><%= link_to "WINDSTORMS & HURRICANES", pages_wind_and_hurricane_path %></li>
@@ -87,8 +91,9 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= link_to "FILING A CLAIM", pages_filing_claim_path %><span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FILING A CLAIM<span class="caret"></span></a>
               <ul class="dropdown-menu">
+                <li><%= link_to "FILING A CLAIM", pages_filing_claim_path %></li>
                 <li><%= link_to "COMMERCIAL", pages_commercial_path %></li>
                 <li><%= link_to "RESIDENTIAL", pages_residential_path %></li>
                 <li><%= link_to "RETAIL", pages_retail_path %></li>
@@ -102,8 +107,9 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= link_to "RESOURCES", pages_resource_path %><span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RESOURCES<span class="caret"></span></a>
               <ul class="dropdown-menu">
+                <li><%= link_to "RESOURCES", pages_resource_path %></li>
                 <li><%= link_to "FAQs", pages_faq_path %></li>
                 <li><%= link_to "ARTICLES", pages_articles_path %></li>
                 <li><%= link_to "PREPARING FOR A DISASTER", pages_prepare_path %></li>
@@ -113,7 +119,7 @@
                 <li><a href="#">Separated link</a></li>
               </ul>
             </li>
-            <li><%= link_to "Contact Us", "contacts_path"  %></li>
+            <li><%= link_to "Contact Us", contacts_path %></li>
           </ul>
         </div>
       </div>
@@ -128,7 +134,8 @@
       </div><!--/row-->
 
       <footer>
-        <p>&copy; Copyright Epic Group Public Adjusters 2011. All Rights Reserved</p>
+        <hr>
+        <p class="pull-right"><small>&copy; Copyright Epic Group Public Adjusters 2011. All Rights Reserved</small></p>
       </footer>
 
     </div> <!-- /container -->
