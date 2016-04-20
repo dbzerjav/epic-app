@@ -2,10 +2,11 @@ Rails.application.routes.draw do
   devise_for :users
   
   root 'pages#home'
-  
+   
   match '/contacts', to: 'contacts#new', via: 'get'
   resources "contacts", only: [:new, :create]
   
+  get 'pages/our_company', to: 'pages#our_company' 
   get 'pages/power_of_epic', to: 'pages#power_of_epic'
   get 'pages/prof_affiliation', to: 'pages#prof_affiliation'
   get 'pages/our_people', to: 'pages#our_people'
@@ -14,9 +15,11 @@ Rails.application.routes.draw do
   get 'pages/executives', to: 'pages#executives'
   get 'pages/lic_and_cert', to: 'pages#lic_and_cert'
   
+  get 'pages/how_it_works', to: 'pages#how_it_works' 
   get 'pages/epic_advantage', to: 'pages#epic_advantage'
   get 'pages/epic_approach', to: 'pages#epic_approach'
   
+  get 'pages/suffered_damage', to: 'pages#suffered_damage' 
   get 'pages/flood', to: 'pages#flood'
   get 'pages/water_and_mold', to: 'pages#water_and_mold'
   get 'pages/wind_and_hurricane', to: 'pages#wind_and_hurricane'
@@ -24,6 +27,7 @@ Rails.application.routes.draw do
   get 'pages/multi_cause', to: 'pages#multi_cause'
   get 'pages/other_cause', to: 'pages#other_cause'
   
+  get 'pages/filing_claim', to: 'pages#filing_claim'  
   get 'pages/commercial', to: 'pages#commercial'
   get 'pages/residential', to: 'pages#residential'
   get 'pages/retail', to: 'pages#retail'
@@ -32,12 +36,14 @@ Rails.application.routes.draw do
   get 'pages/service', to: 'pages#service'
   get 'pages/investment_prop', to: 'pages#investment_prop'
   get 'pages/worship', to: 'pages#worship'
-
+ 
+  get 'pages/resource', to: 'pages#resource'
   get 'pages/faq', to: 'pages#faq'
   get 'pages/articles', to: 'pages#articles'
   get 'pages/prepare', to: 'pages#prepare'
   get 'pages/links', to: 'pages#links'
   get 'pages/stories', to: 'pages#stories'
+
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

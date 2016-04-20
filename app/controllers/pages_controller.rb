@@ -3,6 +3,9 @@ class PagesController < ApplicationController
   def home
   end
   
+  def our_company
+  end
+  
   def power_of_epic
   end
   
@@ -24,10 +27,16 @@ class PagesController < ApplicationController
   def lic_and_cert
   end
   
+  def how_it_works
+  end
+  
   def epic_advantage
   end
   
   def epic_approach
+  end
+  
+  def suffered_damage
   end
   
   def flood
@@ -46,6 +55,9 @@ class PagesController < ApplicationController
   end
   
   def other_cause
+  end
+  
+  def filing_claim
   end
   
   def commercial
@@ -72,6 +84,9 @@ class PagesController < ApplicationController
   def worship
   end
   
+  def resource
+  def
+  
   def faq
   end
   
@@ -86,4 +101,5 @@ class PagesController < ApplicationController
   
   def stories
   end
+end
 end
